@@ -1,0 +1,12 @@
+{
+  "alert_id": "ALT-0001",
+  "timestamp": "2026-11-21T03:14:22Z",
+  "source": "sshd",
+  "rule": "Multiple failed SSH logins",
+  "src_ip": "203.0.113.45",
+  "dest_host": "srv-web-01",
+  "username": "root",
+  "failed_attempts": 87,
+  "window_minutes": 5,
+  "raw_log": "Nov 21 03:14:22 srv-web-01 sshd[2211]: Failed password for root from 203.0.113.45 port 51822 ssh2"
+}
