@@ -1,0 +1,9 @@
+{
+  "alert_id": "ALT-0002",
+  "timestamp": "2026-11-21T14:02:10Z",
+  "source": "apache",
+  "rule": "Suspicious HTTP request",
+  "src_ip": "198.51.100.23",
+  "dest_host": "srv-web-01",
+  "raw_log": "198.51.100.23 - - [21/Nov/2026:14:02:10 +0000] \"GET /download?file=../../../../etc/passwd HTTP/1.1\" 200 1834 \"-\" \"curl/8.4.0\""
+}
