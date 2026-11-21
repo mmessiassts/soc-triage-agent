@@ -1,0 +1,23 @@
+{
+  "alert_id": "ALT-0001",
+  "severity": "high",
+  "classification": "SSH brute force",
+  "mitre_attack": {
+    "tactic": "Credential Access",
+    "technique": "T1110 - Brute Force"
+  },
+  "iocs": [
+    {
+      "type": "ip",
+      "value": "203.0.113.45",
+      "enrichment": "pendente"
+    }
+  ],
+  "summary": "87 tentativas de login SSH falhas para o usuário root em 5 minutos, vindas de um único IP externo.",
+  "recommended_actions": [
+    "Bloquear o IP de origem no firewall",
+    "Verificar se houve algum login bem-sucedido a partir desse IP",
+    "Desabilitar login SSH direto como root"
+  ],
+  "requires_human_approval": true
+}
